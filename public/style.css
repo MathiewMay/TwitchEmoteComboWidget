@@ -1,0 +1,28 @@
+#combo { color: #FFFFFF; }
+#combo { font-size: 30px; font-family: Fredoka One; }
+#combo { float: left; -webkit-text-stroke: 2.3px black; padding-left: 5px; padding-top: 20px; }
+#emote { padding-left: 5px; height: 80px; }
+.emote-anim { animation-name: jump; animation-duration: 0.3s; }
+.container_up { animation-name: combo_apear; animation-duration: 0.2s; }
+.container_down { animation-name: combo_disapear; animation-duration: 0.2s; }
+@keyframes jump {
+	from{
+		transform: scale(1.2);
+	}to{
+		transform: scale(1);
+	}
+}
+@keyframes combo_apear {
+	from{
+		transform: translateY(10em);
+	}to{
+		transform: translateY(0em);
+	}
+}
+@keyframes combo_disapear {
+	from{
+		transform: translateY(0em);
+	}to{
+		transform: translateY(10em);
+	}
+}
